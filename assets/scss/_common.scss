@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    @media screen and (max-width: $small_tablet) {
+        overflow-x: hidden;
+    }
+}
+
+$base-size: 16;
+
+@function ps($target, $context: $base-size) {
+  @return ($target / $context) + rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 1146px;
+    @media screen and (max-width: $laptop) {
+        width: 80vw;
+    }
+    @media screen and (max-width: $tablet) {
+        width: 100vw;
+    }
+}
+
+.caption {
+    font-family: MontserratAlternates-Regular;
+    font-size: ps(40);
+}
+
+.text {
+    font-family: MontserratAlternates-Regular;
+    font-size: ps(18);
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    padding: 52px 70px 68px 70px;
+    background: #fff;
+    border: 5px solid #F79F33;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 324px;
+    font-family: MontserratAlternates-Regular;
+    &__text:not(&__text:first-child) {
+        font-size: 16px;
+        margin-top: 29px;
+        @media screen and (max-width: $small_tablet) {
+            margin-top: 10px;  
+        }
+    }
+    &__input {
+        font-size: 16px;
+        margin-top: 5px;
+        background: #F4F4F4;
+        outline: none;
+        border: none;
+        border-radius: 11px;
+        padding: 14px 10px;
+    }
+    & label {
+        white-space: nowrap;
+        @media screen and (max-width: $small_tablet) {
+            white-space: normal;
+        }
+    }
+    & .radio-wrapper {
+        display: flex;
+        flex-flow: nowrap;
+        margin-top: 25px;
+    }
+    & .btn {
+        margin-top: 55px;
+        @media screen and (max-width: $small_tablet) {
+            margin-top: 15px;
+            text-align: center;  
+        }
+    }
+    & input[type=radio] {
+        display: none;
+    }
+    & .radio {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 0;
+        line-height: 18px;
+        user-select: none;
+    }
+    & .radio::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        background: #F4F4F4 0 0 no-repeat;
+        border-radius: 50%;
+    }
+    & .radio::after {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 3.5px;
+        bottom: 4px;
+        background: transparent 0 0 no-repeat;
+    }
+     
+    /* Checked */
+    & .radio_active::after {
+        background: #F79F33 0 0 no-repeat;
+        border-radius: 50%;
+    }
+    @media screen and (max-width: $laptop) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: $small_tablet) {
+        box-sizing: border-box;
+        padding: 32px 40px 38px 40px;
+        font-size: 12px;    
+        margin: 0 auto;
+    }
+}
+
+
+.btn {
+    background: #F79F33;
+    border-radius: ps(11);
+    padding: ps(14) ps(25);
+    font-family: MontserratAlternates-Regular;
+    font-weight: 800;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500px;
+    cursor: pointer;
+    @media screen and (max-width: $laptop) {
+        font-size: 14px;
+    }
+}
+
+
+.select {
+    position: relative;
+    margin-top: 5px;
+    cursor: pointer;
+    &__value {
+        position: relative;
+        font-size: 15px;
+        background: #F4F4F4;
+        border-radius: 11px 11px 0 0;
+        padding: 14px 10px;
+        &::before {
+            content: url(../img/arrow.png);
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+        }
+    }
+    &__options {
+        position: absolute;
+        width: 100%;
+        display: none;
+        z-index: 10;
+    }
+    &__option {
+        font-size: 16px;
+        background: #F4F4F4;
+        padding: 14px 10px;
+        &:last-child {
+            border-radius: 0 0 11px 11px;
+        }
+    }
+    &_active {
+        .select__value::before {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        .select__options {
+            display: block;
+        }
+    }
+    & input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-family: MontserratAlternates-Regular;
+        font-weight: 600;
+    }
+    &_up {
+        .select__options {
+            bottom: 40px;
+        }
+        .select__value {
+            border-radius: 0 0 11px 11px;
+        }
+        .select__option {
+            &:first-child {
+                border-radius: 11px 11px 0 0;
+            }
+        }
+    }
+}

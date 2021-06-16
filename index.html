@@ -1,0 +1,204 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Мастер Ремонтов</title>
+</head>
+
+<body>
+    <div class="wrapper introduce">
+        <div class="container">
+            <header class="header">
+                <div class="header__block">
+                    <div class="text header__item header__phone">99-99-99</div>
+                    <div class="text header__item header__email">pochta@mail.ru</div>
+                </div>
+                <div class="header__block">
+                    <div class="text header__text">Введи данные о проекте и получи профессиональную ремонтную бригаду по
+                        фиксированной цене!</div>
+                </div>
+            </header>
+            <div class="introduce__content">
+                <div class="person-background"></div>
+                <div class="introduce__info">
+                    <div class="text introduce__s1">Мастер<br class="phone_delete"> Ремонтов</div>
+                    <div class="text introduce__s2">Тебе предстоит</br> ремонт</div>
+                    <div class="text introduce__s3">и ты не знаешь с</br> чего начать?</div>
+                    <div class="text introduce__s4">Подберите</br> профессиональную бригаду</br> для Вашего объекта</br>
+                        за 3 клика</div>
+                </div>
+                <div class="text header__text_mobile">Введи данные о проекте и получи профессиональную ремонтную бригаду
+                    по фиксированной цене!</div>
+                <div class="form introduce__form">
+                    <div class="form__text">Площадь квартиры для ремонта </div>
+                    <input id="flat-size" placeholder="40" type="text" class="form__input">
+                    <div class="form__text introduce__formtext">Тип ремонта</div>
+                    <div class="select">
+                        <div id="repair-type" class="select__value">Капитальный ремонт</div>
+                        <div class="select__options">
+                            <div class="select__option">Капитальный ремонт</div>
+                            <div class="select__option">Косметический ремонт</div>
+                            <div class="select__option">Капитальный с перепланировкой</div>
+                        </div>
+                    </div>
+                    <div class="form__text introduce__formtext">Телефон для обратной связи</div>
+                    <input id="phone-number" placeholder="+38(999) 999-99-99" type="text" class="form__input client-telephone">
+                    <div class="radio-wrapper">
+                        <div class="radio radio_active" id="radio1">Дизайн-проект</div>
+                    </div>
+                    <div class="radio-wrapper">
+                        <div class="radio" id="radio2">Контроль строителей (технадзор)</div>
+                    </div>
+                    <div class="btn introduce__formtext choose_master">Подобрать мастера ремонта</div>
+                </div>
+                <img class="introduce__person" src="./assets/img/person.png">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper portfolio">
+        <div class="container">
+            <div class="caption portfolio__caption">Примеры наших работ</div>
+            <div class="portfolio__works">
+                <div class="portfolio__work portfolio__work_active">
+                    <div class="portfolio__image">
+                        <div class="portfolio__left-arrow"></div>
+                        <div class="portfolio__right-arrow"></div>
+                        <img src="./assets/img/work1.png" alt="there's no approptiate image">
+                    </div>
+                    <div class="text portfolio__address">Адрес</div>
+                </div>
+                <div class="portfolio__work">
+                    <div class="portfolio__image">
+                        <div class="portfolio__left-arrow"></div>
+                        <div class="portfolio__right-arrow"></div>
+                        <img src="./assets/img/work2.png" alt="there's no approptiate image">
+                    </div>
+                    <div class="text portfolio__address">Адрес</div>
+                </div>
+                <div class="portfolio__work">
+                    <div class="portfolio__image">
+                        <div class="portfolio__left-arrow"></div>
+                        <div class="portfolio__right-arrow"></div>
+                        <img src="./assets/img/work3.png" alt="there's no approptiate image">
+                    </div>
+                    <div class="text portfolio__address">Адрес</div>
+                </div>
+                <div class="portfolio__work">
+                    <div class="portfolio__image">
+                        <div class="portfolio__left-arrow"></div>
+                        <div class="portfolio__right-arrow"></div>
+                        <img src="./assets/img/work4.png" alt="there's no approptiate image">
+                    </div>
+                    <div class="text portfolio__address">Адрес</div>
+                </div>
+                <div class="portfolio__work">
+                    <div class="portfolio__image">
+                        <div class="portfolio__left-arrow"></div>
+                        <div class="portfolio__right-arrow"></div>
+                        <img src="./assets/img/work5.png" alt="there's no approptiate image">
+                    </div>
+                    <div class="text portfolio__address">Адрес</div>
+                </div>
+                <div class="portfolio__work">
+                    <div class="portfolio__image">
+                        <div class="portfolio__left-arrow"></div>
+                        <div class="portfolio__right-arrow"></div>
+                        <img src="./assets/img/work6.png" alt="there's no approptiate image">
+                    </div>
+                    <div class="text portfolio__address">Адрес</div>
+                </div>
+            </div>
+            <div class="btn portfolio__btn choose_master">Подобрать мастера ремонта</div>
+        </div>
+
+    </div>
+    <div class="wrapper advantages">
+        <div class="container">
+            <div class="caption advantages__caption">Почему нас выбирают</div>
+            <div class="text advantages__text">Мы экономим Ваши деньги и время на созвоны и контроль ремонта - все
+                происходит в 1 месте на нашей платформе и в удобном приложении</div>
+            <div class="advantages__titles">
+                <div class="advantages__group">
+                    <div class="advantages__title">
+                        <div class="advantages__icon">
+                            <img src="./assets/img/icon1.png" alt="there's no approptiate image">
+                        </div>
+                        <div class="text advantages__text">Он-лайн платформа ремонтов ремонтов, где вам будет подобрана
+                            лучшая строительная бригада по заранее согласованным параметрам</div>
+                    </div>
+                    <div class="advantages__title">
+                        <div class="advantages__icon">
+                            <img src="./assets/img/icon2.png" alt="there's no approptiate image">
+                        </div>
+                        <div class="text advantages__text">Ремонт по фиксированной цене согласно выбранному типу ремонта
+                        </div>
+                    </div>
+                    <div class="advantages__title">
+                        <div class="advantages__icon">
+                            <img src="./assets/img/icon3.png" alt="there's no approptiate image">
+                        </div>
+                        <div class="text advantages__text">Все ремонтники проходят проверку и подписывают гарантию
+                            выполнения работ</div>
+                    </div>
+                </div>
+                <div class="advantages__group">
+                    <div class="advantages__title">
+                        <div class="advantages__icon">
+                            <img src="./assets/img/icon4.png" alt="there's no approptiate image">
+                        </div>
+                        <div class="text advantages__text">Общение с ремонтниками и все согласования в 1 месте на нашей
+                            платформе </div>
+                    </div>
+                    <div class="advantages__title">
+                        <div class="advantages__icon">
+                            <img src="./assets/img/icon5.png" alt="there's no approptiate image">
+                        </div>
+                        <div class="text advantages__text">Только профессиональные бригады с опытом работы более 5 лет
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__group">
+                    <div class="advantages__title">
+                        <div class="advantages__icon">
+                            <img src="./assets/img/icon6.png" alt="there's no approptiate image">
+                        </div>
+                        <div class="text advantages__text">Ремонты под ключ за 3 клика</div>
+                    </div>
+                    <div class="advantages__title">
+                        <div class="advantages__icon">
+                            <img src="./assets/img/icon7.png" alt="there's no approptiate image">
+                        </div>
+                        <div class="text advantages__text">Подключай дополнительную опцию «Технадзор» и получай свежие
+                            фото и видео твоего ремонта в режиме онлайн</div>
+                    </div>
+                    <div class="advantages__title">
+                        <div class="advantages__icon">
+                            <img src="./assets/img/icon8.png" alt="there's no approptiate image">
+                        </div>
+                        <div class="text advantages__text">Ремонт без головной боли и трат времени - вся коммуникация на
+                            1 платформе</div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn advantages__btn choose_master">Подобрать мастера ремонта</div>
+        </div>
+    </div>
+    <div class="wrapper feedback">
+        <div class="container"></div>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="./js/select.js"></script>
+    <script defer src="./js/mask.js"></script>
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/checked.js"></script>
+    <script defer src="./js/sendmail.js"></script>
+</body>
+</html>

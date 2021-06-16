@@ -1,0 +1,110 @@
+.advantages {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    &__titles {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    &__group {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        &:nth-child(1) { 
+            margin-top: 30px;
+            @media screen and (max-width: $phone) {
+                margin-top: 0;
+            }
+        }
+        &:nth-child(2) { 
+            margin-top: 74px;
+            justify-content: center;
+            & .advantages__title:first-child {
+                margin-right: 25px;
+                @media screen and (max-width: $phone) {
+                    margin-right: 0;
+                }
+            }
+            & .advantages__title:last-child {
+                margin-left: 25px;
+                @media screen and (max-width: $phone) {
+                    margin-left: 0;
+                }
+            }
+            @media screen and (max-width: $phone) {
+                margin-top: 0;
+            }
+        }
+        &:nth-child(3) { 
+            margin-top: 50px;
+            @media screen and (max-width: $phone) {
+                margin-top: 0;
+            }
+        }
+        @media screen and (max-width: $laptop) {
+            justify-content: center;
+        }
+        @media screen and (max-width: $tablet) {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        width: 362px;
+        font-size: 16px;
+        font-weight: 600;
+        @media screen and (max-width: $laptop) {
+            width: 275px;
+        }
+        @media screen and (max-width: $tablet) {
+            margin-top: 50px;
+        }
+        @media screen and (max-width: $phone) {
+            margin-top: 30px;
+        }
+    }
+
+    &__icon { 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        background: #F79F33;
+        border-radius: 50%;
+        margin: 0 auto;
+        & img {
+            @media screen and (max-width: $laptop) {
+                width: 55px;
+            }
+        }
+        @media screen and (max-width: $laptop) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        margin-top: 15px;
+        @media screen and (max-width: $laptop) {
+            font-size: 14px;
+        }
+    }
+
+    &__caption {
+        text-align: center;
+        font-weight: bold;
+    }
+    &__btn {
+        margin: 60px auto 0 auto;
+    }
+    @media screen and (max-width: $laptop) {
+        margin: 25px 0 0 0;
+        padding-bottom: 25px;
+    }
+}
